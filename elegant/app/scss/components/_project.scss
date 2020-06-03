@@ -1,0 +1,167 @@
+.project-container {
+  padding-top: 80px;
+}
+
+.project-section {
+  display: flex;
+  padding: 60px 80px;
+  background-color: $subbackground;
+
+  @include breakpoints(md) {
+    flex-wrap: wrap;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.project-main {
+  flex: 0 0 70%;
+  max-width: 70%;
+  margin-right: 20px;
+
+  @include breakpoints(md) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 660px;
+
+    @include breakpoints(md) {
+      text-align: left;
+    }
+
+    &-header {
+      color: $border-color;
+      margin-top: 20px;
+
+      @include breakpoints(md) {
+        margin: 30px 35px;
+      }
+
+      @include breakpoints(sm) {
+        margin: 30px 20px;
+      }
+    }
+
+    &-text {
+      display: block;
+      margin: 100px 0;
+
+      @include breakpoints(md) {
+        margin: 70px 35px;
+      }
+
+      @include breakpoints(sm) {
+        margin: 70px 20px;
+      }
+    }
+  }
+
+  &__section {
+    @include breakpoints(md) {
+      max-width: 660px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &-item {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      @include breakpoints(md) {
+        margin-bottom: 20px;
+        display: inline-flex;
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      @include breakpoints(xs) {
+        max-width: 300px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.sidebar {
+  flex: 0 0 30%;
+  max-width: 30%;
+  margin-bottom: 25px;
+
+  @include breakpoints(md) {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__item {
+    margin-bottom: 5px;
+    width: 100%;
+    max-width: 300px;
+
+    @include breakpoints(md) {
+      flex: 0 0 50%;
+      width: 50%;
+      max-width: 300px;
+      margin-bottom: 10px;
+    }
+
+    @include breakpoints(sm) {
+      flex: 0 0 100%;
+      width: 100%;
+    }
+
+    &-wrap {
+      height: 0;
+      width: 100%;
+      padding-bottom: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    &-img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      display: block;
+      max-width: none;
+    }
+  }
+}
+.project-btn__section {
+  margin: 90px 0 70px;
+  @include fcsa;
+
+  @include breakpoints(md) {
+    flex-wrap: wrap;
+    margin: 70px 0 50px;
+  }
+}
+.project-btn {
+  border: 1px solid $title-color;
+  color: $title-color;
+
+  &:hover {
+    color: $background-color;
+  }
+
+  @include breakpoints(md) {
+    flex: 0 0 55%;
+    max-width: 55%;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    display: block;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 300px;
+  }
+}
