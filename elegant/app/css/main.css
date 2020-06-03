@@ -1199,13 +1199,15 @@ img {
       text-transform: uppercase;
       margin-bottom: 50px;
       padding: 15px;
+      color: #505d68;
       -webkit-transition: all 0.3s ease-in;
       -o-transition: all 0.3s ease-in;
       transition: all 0.3s ease-in; }
       @media only screen and (max-width: 991.98px) {
         .footer-content__item-title {
           margin-bottom: 0;
-          cursor: pointer; }
+          cursor: pointer;
+          position: relative; }
           .footer-content__item-title:after {
             content: "\e807";
             position: absolute;
@@ -1246,6 +1248,10 @@ img {
 .js-active-title {
   color: #ffffff;
   background-color: rgba(2, 23, 37, 0.7); }
+  @media only screen and (min-width: 992px) {
+    .js-active-title {
+      color: #505d68;
+      background-color: transparent; } }
   .js-active-title:after {
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);

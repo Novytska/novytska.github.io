@@ -52,11 +52,13 @@
       text-transform: uppercase;
       margin-bottom: 50px;
       padding: 15px;
+      color: $footer-text;
       transition: all 0.3s ease-in;
 
       @include breakpoints(md) {
         margin-bottom: 0;
         cursor: pointer;
+        position: relative;
 
         &:after {
           content: "\e807";
@@ -106,6 +108,11 @@
 .js-active-title {
   color: $background-color;
   background-color: rgba(2, 23, 37, 0.7);
+
+  @include breakpoints(lg-up) {
+    color: $footer-text;
+    background-color: transparent;
+  }
 
   &:after {
     transform: rotate(180deg);
