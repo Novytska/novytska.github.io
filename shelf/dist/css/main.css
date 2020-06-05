@@ -964,7 +964,7 @@ input::-webkit-input-placeholder {
   background-image: url(../images/search.svg);
   background-position: 50%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 100%;
   width: 100%;
   -webkit-transform: translate(-50%, -50%);
@@ -1304,13 +1304,13 @@ input::-webkit-input-placeholder {
 }
 
 .promo-item__link:not(:first-child) {
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 .promo-item__link::before {
   position: absolute;
   top: 50%;
-  right: -25px;
+  right: -20px;
   width: 8px;
   height: 8px;
   -webkit-transition: all 0.4s ease;
@@ -2111,7 +2111,16 @@ input::-webkit-input-placeholder {
   }
 
   .promo-item__links {
-    bottom: 10px;
+    bottom: 30px;
+    left: 40px;
+  }
+
+  .promo-item__link {
+    display: block;
+  }
+
+  .promo-item__link:not(:first-child) {
+    margin-left: 0;
   }
 
   .brands-item {
