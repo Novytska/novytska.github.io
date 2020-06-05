@@ -2111,12 +2111,13 @@ input::-webkit-input-placeholder {
   }
 
   .promo-item__links {
-    bottom: 30px;
-    left: 40px;
+    left: 30px;
+    bottom: 10px;
   }
 
   .promo-item__link {
     display: block;
+    line-height: 14px;
   }
 
   .promo-item__link:not(:first-child) {
