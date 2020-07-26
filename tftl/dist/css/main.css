@@ -524,6 +524,7 @@ a:hover {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
+  height: 100%;
 }
 
 img {
@@ -594,7 +595,7 @@ img {
 
 .main {
   position: relative;
-  height: 100vh;
+  height: 100%;
 }
 
 .header {
