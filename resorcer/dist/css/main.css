@@ -878,22 +878,84 @@ img {
   line-height: 27px;
   font-weight: 600;
   color: #009EB9;
-  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  -o-transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
 }
 
 .search-block__link:before {
-  position: absolute;
-  top: 50%;
-  right: -35px;
   content: '';
   width: 20px;
   height: 20px;
-  position: absolute;
   background-image: url(../img/right-arrow.svg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  margin-left: 10px;
+}
+
+.search-block__link:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.work-content {
+  margin: 110px 0;
+}
+
+.work-content__title {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+}
+
+.work-content__block {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.work-content__item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: calc(25% - 15px);
+  padding: 40px 35px 90px;
+  -webkit-box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.work-content__item:not(last-child) {
+  margin-right: 20px;
+}
+
+.work-content__item-title {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #009EB9;
+}
+
+.work-content__item-text {
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
 }
