@@ -3,9 +3,7 @@
    License: none (public domain)
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;
-
-0,600;0,700;0,800;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300&display=swap");
 html,
 body,
 div,
@@ -610,9 +608,12 @@ textarea {
 }
 
 .hamburger--spin .hamburger-inner::before {
-  -webkit-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
-  -o-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  -webkit-transition: top 0.1s 0.25s ease-in,
+ opacity 0.1s ease-in;
+  -o-transition: top 0.1s 0.25s ease-in,
+ opacity 0.1s ease-in;
+  transition: top 0.1s 0.25s ease-in,
+ opacity 0.1s ease-in;
 }
 
 .hamburger--spin .hamburger-inner::after {
@@ -638,9 +639,12 @@ textarea {
 .hamburger--spin.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
-  -webkit-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
-  -o-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
-  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  -webkit-transition: top 0.1s ease-out,
+ opacity 0.1s 0.12s ease-out;
+  -o-transition: top 0.1s ease-out,
+ opacity 0.1s 0.12s ease-out;
+  transition: top 0.1s ease-out,
+ opacity 0.1s 0.12s ease-out;
 }
 
 .hamburger--spin.is-active .hamburger-inner::after {
@@ -677,7 +681,6 @@ a:hover {
 
 .wrapper {
   width: 100%;
-  overflow: hidden;
   margin: 0 auto;
   background-color: #ffffff;
 }
@@ -1058,6 +1061,7 @@ label.error {
   -ms-flex: 0 0 70%;
   flex: 0 0 70%;
   max-width: 70%;
+  overflow: hidden;
 }
 
 .team-main__context {
@@ -1107,7 +1111,7 @@ label.error {
 }
 
 .team-main__container {
-  margin: 0 -20px;
+  margin: 0 -10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1147,12 +1151,14 @@ label.error {
   padding: 5px 0;
   width: calc(100% - 20px);
   text-align: center;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(0) translateX(-50%);
+  -ms-transform: scale(0) translateX(-50%);
+  transform: scale(0) translateX(-50%);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .subs-wrap {
@@ -1439,19 +1445,19 @@ label.error {
 }
 
 .footer-content__social-icon.facebook:before {
-  background-image: url(../../img/facebook.svg);
+  background-image: url(../img/facebook.svg);
 }
 
 .footer-content__social-icon.google:before {
-  background-image: url(../../img/google-plus.svg);
+  background-image: url(../img/google-plus.svg);
 }
 
 .footer-content__social-icon.linkin:before {
-  background-image: url(../../img/linkedin.svg);
+  background-image: url(../img/linkedin.svg);
 }
 
 .footer-content__social-icon.twitter:before {
-  background-image: url(../../img/twitter.svg);
+  background-image: url(../img/twitter.svg);
 }
 
 @media (min-width: 1024px) {
