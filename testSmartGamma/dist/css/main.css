@@ -3,7 +3,8 @@
    License: none (public domain)
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400%3b0,600%3b0,700%3b0,800%3b1,300&display=swap");
+
 html,
 body,
 div,
@@ -608,12 +609,9 @@ textarea {
 }
 
 .hamburger--spin .hamburger-inner::before {
-  -webkit-transition: top 0.1s 0.25s ease-in,
- opacity 0.1s ease-in;
-  -o-transition: top 0.1s 0.25s ease-in,
- opacity 0.1s ease-in;
-  transition: top 0.1s 0.25s ease-in,
- opacity 0.1s ease-in;
+  -webkit-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  -o-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
 }
 
 .hamburger--spin .hamburger-inner::after {
@@ -639,12 +637,9 @@ textarea {
 .hamburger--spin.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
-  -webkit-transition: top 0.1s ease-out,
- opacity 0.1s 0.12s ease-out;
-  -o-transition: top 0.1s ease-out,
- opacity 0.1s 0.12s ease-out;
-  transition: top 0.1s ease-out,
- opacity 0.1s 0.12s ease-out;
+  -webkit-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  -o-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
 }
 
 .hamburger--spin.is-active .hamburger-inner::after {
@@ -1683,7 +1678,7 @@ label.error {
 
 @media (max-width: 575.98px) {
   .wrapper {
-    padding-bottom: 48px;
+    padding-top: 48px;
   }
 
   .title-h2 {
