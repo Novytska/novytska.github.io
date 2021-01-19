@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="586.39" height="830.415">
+<g opacity=".2"><path stroke-miterlimit="20" d="M.479.144C32.188 105.562-10.454 106.146 79.374 253.4c89.828 147.255 225.302 122.718 320.515 118.199 95.212-4.52 179.394 73.58 185.76 168.213 3.43 51.007-29.351 73.913-111.505 117.767-82.153 43.856-169.363 16.397-274.2 59.49C95.108 760.162 115.8 805.12 54.798 829.952" fill="none" stroke="#f1f2f3"/></g><defs id="defs38"><filter id="bgqka" width="813" height="1247" x="-30" y="-30" filterUnits="userSpaceOnUse"><feOffset dx="5" dy="15" in="SourceGraphic" result="FeOffset1022Out" id="feOffset33"/>
+<feGaussianBlur in="FeOffset1022Out" result="FeGaussianBlur1023Out" stdDeviation="8 8" id="feGaussianBlur35"/>
+</filter></defs></svg>
